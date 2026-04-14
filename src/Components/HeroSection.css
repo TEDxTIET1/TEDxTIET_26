@@ -1,0 +1,43 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 0;
+  margin-top: 4.2vw;
+  position: relative;
+  z-index: 2; /* keep text above glow */
+}
+
+.homefnt {
+  width: 100%;
+  height: 50lvw;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-position: top left;
+  position: relative; /* so absolute glow works */
+  /* background-color: rgb(170, 0, 0); */
+}
+
+.textmask {
+  color: rgb(255, 229, 213);
+  font-size: 44vw;
+  font-weight: bolder;
+  font-family: "Myfont";
+}
+
+.textmask:hover {
+  color: transparent;
+  background-image: var(--bg-img);
+  background-size: 50vw;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-position-y: 9.5vw;
+  background-clip: text;
+}
+
+@font-face {
+  font-family: "Myfont";
+  src: url("../assets/MangoGrotesque-ExtraBold.otf");
+}

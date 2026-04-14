@@ -1,1 +1,0 @@
-# TEDxTIET_26
