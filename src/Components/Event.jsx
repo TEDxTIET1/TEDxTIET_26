@@ -48,15 +48,15 @@ const Event = () => {
         <div className="cursor-circle"></div>
 
         <div className="event-content">
-          <h2 className="event-title">TEDx Conference 2025</h2>
-          <p className="event-tagline">The Unseen Dimensions</p>
+          <h2 className="event-title">RED DAY 2026</h2>
+          <p className="event-tagline">Moments That Shape Us</p>
 
           <div className="event-info">
             <p>
-              <strong>Date:</strong> 1st November 2025
+              <strong>Date:</strong> 23 April 2026
             </p>
             <p>
-              <strong>Time:</strong> 2:00 PM
+              <strong>Time:</strong> 2:30 PM
             </p>
             <p>
               <strong>Venue:</strong> Main Auditorium
@@ -70,7 +70,7 @@ const Event = () => {
 
           <button
             className="register-btn"
-            onClick={() => navigate("/register")}
+            onClick={() => navigate("https://unstop.com/o/J4DHu2p?utm_medium=Share&utm_source=tedxsoc5964&utm_campaign=Competitions")}
           >
             Register Now
           </button>
