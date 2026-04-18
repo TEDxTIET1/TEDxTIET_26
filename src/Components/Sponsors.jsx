@@ -1,3 +1,7 @@
+import React from "react";
+import "./ComingSoon.css"; // styling file
+
+/*
 import FlowingMenu from "./FlowingMenu";
 import "./Sponsors.css";
 
@@ -47,6 +51,16 @@ function Sponsors() {
         <FlowingMenu items={demoItems} />
       </div>
     </>
+  );
+}
+*/
+
+function Sponsors() {
+  return (
+    <div className="coming-soon-container">
+      <h1>Coming Soon</h1>
+      <p>We’re working hard to launch something amazing. Stay tuned!</p>
+    </div>
   );
 }
 

@@ -29,7 +29,8 @@
 /* Card */
 .stacked-card {
   position: sticky;
-  top: 120px; /* SAME for all cards */
+  top: 120px;
+  /* SAME for all cards */
 
   border-radius: 28px;
   padding: 50px;
@@ -56,7 +57,7 @@
 .card-dark {
   background: #0b0b0b;
   color: #ffffff;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card-red {
@@ -67,7 +68,7 @@
 .card-white {
   background: #ffffff;
   color: #000000;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Content */

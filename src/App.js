@@ -8,7 +8,7 @@ import Cards from "./Components/Cards.jsx";
 import ProfileCard from "./Components/ProfileCard.jsx";
 import Footer from "./Components/Footer.jsx";
 import NotFound from "./Components/NotFound";
-import Team from "./Components/Team.jsx";
+// import Team from "./Components/Team.jsx";
 import Sponsors from "./Components/Sponsors.jsx";
 import Speaker from "./Components/Speaker.jsx";
 import StatsOverview from "./Components/StatsOverview.jsx";
@@ -18,7 +18,7 @@ import InfiniteGallery from "./Components/infiniteGallery.jsx";
 import EbGrid from "./Components/EbGrid.jsx";
 import Event from "./Components/Event.jsx"; // ✅ Event page
 import Register from "./Components/Register.jsx"; // ✅ Register page
-import PopupOverlay from "./Components/PopupOverlay";
+// import PopupOverlay from "./Components/PopupOverlay";
 import EventDetails from "./Components/EventDetails";
 import StackedCards from "./Components/StackedCards";
 
