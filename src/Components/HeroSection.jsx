@@ -66,37 +66,9 @@ const HeroSection = () => {
 
         {/* Hero Content */}
         <section className="relative z-10 w-full max-w-7xl px-8 flex flex-col items-center text-center">
-          <style>{`
-            @keyframes tube-flicker {
-              0%, 9%, 11%, 19%, 21%, 69%, 71%, 100% {
-                text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.2);
-                opacity: 1;
-                transform: translate(0, 0);
-              }
-              10% {
-                text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-                opacity: 0.8;
-                transform: translate(1px, -1px);
-              }
-              20% {
-                text-shadow: none;
-                opacity: 0.9;
-                transform: translate(-1px, 1px);
-              }
-              70% {
-                text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-                opacity: 0.85;
-                transform: translate(0.5px, 0.5px);
-              }
-            }
-            .animate-tube-flicker {
-              animation: tube-flicker 6s infinite;
-              display: block; /* maintain block structure from template */
-            }
-          `}</style>
           <h1 className="text-[12vw] md:text-[10rem] font-black leading-[0.85] tracking-tighter uppercase mb-6 drop-shadow-2xl">
             <span className="block text-[#eb0028]">RED</span>
-            <span className="animate-tube-flicker text-stroke-red">DAY</span>
+            <span className="block text-stroke-red">DAY</span>
             <span className="block text-white">2026</span>
           </h1>
           <p className="max-w-xl text-stone-300 text-lg md:text-xl font-light leading-relaxed mb-6 tracking-wide">
