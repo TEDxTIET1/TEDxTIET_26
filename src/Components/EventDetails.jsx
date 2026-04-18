@@ -1,60 +1,22 @@
-import React, { useEffect } from "react";
-import "./EventDetails.css";
+import React from 'react';
 
 const EventDetails = () => {
-  useEffect(() => {
-    const cursor = document.querySelector(".cursor-circle");
-    const section = document.querySelector(".event-details");
-
-    if (!cursor || !section) return;
-
-    let mouseX = 0, mouseY = 0;
-    let currentX = 0, currentY = 0;
-
-    const moveCursor = (e) => {
-      const rect = section.getBoundingClientRect();
-      mouseX = e.clientX - rect.left;
-      mouseY = e.clientY - rect.top;
-    };
-
-    const animate = () => {
-      // Smooth easing for natural movement
-      currentX += (mouseX - currentX) * 0.15;
-      currentY += (mouseY - currentY) * 0.15;
-      cursor.style.transform = `translate(${currentX - 110}px, ${currentY - 160}px)`; 
-      requestAnimationFrame(animate);
-    };
-
-    section.addEventListener("mousemove", moveCursor);
-    animate();
-
-    return () => {
-      section.removeEventListener("mousemove", moveCursor);
-    };
-  }, []);
-
   return (
-    <section className="event-details" id="event">
-      <div className="cursor-circle"></div>
+    <div className="bg-black text-on-primary-container w-full flex flex-col items-center">
+      {/* Bento Spotlight Section */}
+      
 
-      <div className="event-container">
-        <h2 className="event-title">TEDx Conference 2025</h2>
-        <p className="event-tagline">The Unseen Dimensions</p>
-
-        <div className="event-info">
-          <p><strong>Date:</strong> 1 Nov 2025</p>
-          <p><strong>Time:</strong> 2 PM</p>
-          <p><strong>Venue:</strong> Main Auditorium</p>
+      {/* Idea Spotlight (Content Spotlight) */}
+      <section className="relative z-10 w-full py-24 bg-stone-900/50 backdrop-blur-sm border-y border-white/5">
+        <div className="max-w-4xl mx-auto px-8 text-center">
+          <span className="material-symbols-outlined text-stone-600 text-5xl mb-8" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
+          <blockquote className="text-3xl md:text-5xl font-black tracking-tighter text-white leading-tight mb-8">
+              "IT IS IN YOUR MOMENTS OF DECISION THAT YOUR <span className="text-[#eb0028]">DESTINY IS SHAPED</span>."
+          </blockquote>
+          <cite className="text-[#eb0028] font-bold uppercase tracking-[0.2em] text-xs not-italic">— Tony Robbins</cite>
         </div>
-
-        <a
-          href="/event"
-          className="register-btn"
-        >
-          View Details
-        </a>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

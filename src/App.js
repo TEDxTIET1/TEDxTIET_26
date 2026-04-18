@@ -3,7 +3,6 @@ import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import "./App.css";
 
 import HeroSection from "./Components/HeroSection";
-import TestimonialSlider from "./Components/TestimonialSlider";
 import CustomNavbar from "./Components/navbar";
 import Cards from "./Components/Cards.jsx";
 import ProfileCard from "./Components/ProfileCard.jsx";
@@ -21,6 +20,7 @@ import Event from "./Components/Event.jsx"; // ✅ Event page
 import Register from "./Components/Register.jsx"; // ✅ Register page
 import PopupOverlay from "./Components/PopupOverlay";
 import EventDetails from "./Components/EventDetails";
+import StackedCards from "./Components/StackedCards";
 
 // Scroll handler for /aboutus → testimonials
 function ScrollHandler() {
@@ -68,8 +68,8 @@ function App() {
               <header className="App-header">
                 <HeroSection />
                 <EventDetails />
+                <StackedCards />
                 <div id="testimonials"></div>
-                <TestimonialSlider />
               </header>
               <StatsOverview />
               <Cards />
