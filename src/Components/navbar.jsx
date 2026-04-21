@@ -86,6 +86,11 @@ function CustomNavbar() {
                   Speakers
                 </Link>
               </li>
+                <li>
+  <Link className="animated-text" to="/alumni" onClick={handleClose}>
+    Alumni
+  </Link>
+</li>
             </ul>
           </Offcanvas.Body>
         </Offcanvas>

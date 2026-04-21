@@ -21,6 +21,8 @@ import Register from "./Components/Register.jsx"; // ✅ Register page
 // import PopupOverlay from "./Components/PopupOverlay";
 import EventDetails from "./Components/EventDetails";
 import StackedCards from "./Components/StackedCards";
+import Alumni from "./Components/alumni";
+import Team from "./Components/Team.jsx";
 
 // Scroll handler for /aboutus → testimonials
 function ScrollHandler() {
@@ -96,7 +98,8 @@ function App() {
         <Route path="/sponsor" element={<Sponsors />} />
         <Route path="/speakers" element={<Speaker />} />
         <Route path="/contact" element={<ContactForm />} />
-        <Route path="/team" element={<EbGrid />} />
+        <Route path="/team" element={<Team/>} />
+        <Route path="/alumni" element={<Alumni />} />
 
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />

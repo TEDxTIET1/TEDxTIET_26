@@ -1,41 +1,38 @@
 import React from "react";
-import "./ComingSoon.css"; // styling file
-
-/*
 import FlowingMenu from "./FlowingMenu";
 import "./Sponsors.css";
 
 function Sponsors() {
   const demoItems = [
     {
-      link: "#",
-      text: "CET",
-      image: "/Sponsors/CAN.jpg",
+      link: "https://nashermiles.com/",
+      text: "NASHER MILES",
+      image: "/Sponsors/IMG_2160.JPG",
+      className: "nasher-logo"
     },
     {
-      link: "#",
-      text: "NATURE",
-      image: "/Sponsors/NATURE2.jpg",
+      link: "https://dobraindia.com/",
+      text: "DOBRA",
+      image: "/Sponsors/IMG_2159.JPG",
+      className: "reduced-logo"
     },
     {
-      link: "#",
-      text: "CHEERO'S",
-      image: "/Sponsors/NEW.jpg",
+      link: "https://amoghconnect.com/",
+      text: "AMOGH",
+      image: "/Sponsors/Amogh.jpeg",
+      className: "reduced-logo"
     },
     {
-      link: "#",
-      text: "UNSTOP",
-      image: "/Sponsors/unstop1.jpg",
+      link: "https://tooyumm.com/",
+      text: "TOO YUMM!",
+      image: "/Sponsors/TooYumm.jpg",
+      className: "tooyumm-logo"
     },
     {
-      link: "#",
-      text: "WHIZZKIN",
-      image: "/Sponsors/WHIZZKIN.png",
-    },
-    {
-      link: "#",
-      text: "ÆTHOS",
-      image: "/Sponsors/AE.jpg",
+      link: "https://twistedtails.in/",
+      text: "TWISTED TAILS",
+      image: "/Sponsors/TwistedTails.jpg",
+      className: "twisted-logo"
     },
   ];
 
@@ -51,16 +48,6 @@ function Sponsors() {
         <FlowingMenu items={demoItems} />
       </div>
     </>
-  );
-}
-*/
-
-function Sponsors() {
-  return (
-    <div className="coming-soon-container">
-      <h1>Coming Soon</h1>
-      <p>We’re working hard to launch something amazing. Stay tuned!</p>
-    </div>
   );
 }
 

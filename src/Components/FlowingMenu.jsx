@@ -14,7 +14,7 @@ function FlowingMenu({ items = [] }) {
   );
 }
 
-function MenuItem({ link, text, image }) {
+function MenuItem({ link, text, image, className }) {
   const itemRef = React.useRef(null);
   const marqueeRef = React.useRef(null);
   const marqueeInnerRef = React.useRef(null);
@@ -95,7 +95,7 @@ function MenuItem({ link, text, image }) {
     <>
       <span className="menu-text">{text}</span>
       <div
-        className="menu-image"
+        className={`menu-image ${className || ""}`}
         style={{ backgroundImage: `url(${image})` }}
       />
     </>
@@ -110,6 +110,8 @@ function MenuItem({ link, text, image }) {
       <a
         className="menu-link"
         href={link}
+        target="_blank"
+        rel="noopener noreferrer"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import CustomNavbar from "./navbar";
 
 const Particles = () => {
@@ -84,13 +85,11 @@ const HeroSection = () => {
           {/* Spotlight CTA */}
           <div className="relative group -mt-4">
             <div className="absolute -inset-12 bg-[#eb0028]/20 blur-[60px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-            <a
-              href="https://unstop.com/o/J4DHu2p?utm_medium=Share&utm_source=tedxsoc5964&utm_campaign=Competitions"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/speakers"
               className="inline-block relative bg-[#eb0028] text-white px-8 py-3 rounded-md font-black uppercase tracking-[0.2em] text-xs overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_40px_-10px_rgba(235,0,40,0.5)]">
-              Register Now
-            </a>
+              View speakers
+            </Link>
           </div>
         </section>
       </main>

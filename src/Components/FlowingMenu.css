@@ -66,9 +66,29 @@
   height: 15vh;
   margin: 2em 2vw;
   padding: 1em 0;
-  border-radius: 50px;
-  background-size: cover;
+  border-radius: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
+}
+
+.nasher-logo {
+  width: 500px !important;
+  height: 75px !important; 
+  border-radius: 25px !important;
+  background-size: cover !important; /* ensures the background fills the rounded corners */
+}
+
+.reduced-logo {
+  background-size: 90% !important;
+  width: 250px !important;
+}
+
+.twisted-logo,
+.tooyumm-logo {
+  width: 250px !important;
+  background-size: 90% !important; /* Zoom in */
+  background-position: center 65% !important; /* Shift up to cut from top */
 }
 
 /* Marquee animation container */
@@ -97,7 +117,7 @@
   height: 100%;
   width: 400%;
   will-change: transform;
-  animation: marquee 15s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 /* Keyframes */
