@@ -6,7 +6,16 @@ import "./Register.css";
 const SUPABASE_URL = process.env.REACT_APP_SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.REACT_APP_SUPABASE_ANON_KEY;
 
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+  console.error("Supabase environment variables are missing!", {
+    url: SUPABASE_URL,
+    key: !!SUPABASE_ANON_KEY ? "Present" : "Missing"
+  });
+}
+
+const supabase = (SUPABASE_URL && SUPABASE_ANON_KEY) 
+  ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+  : null;
 
 const Register = () => {
   const [formData, setFormData] = useState({

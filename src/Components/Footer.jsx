@@ -8,7 +8,7 @@ function Footer() {
       style={{
         background: "black",
         color: "#fff",
-        padding: "20px",
+        padding: "20px 20px 10px 20px",
         textAlign: "center",
         marginTop: "auto ",
       }}
@@ -27,45 +27,36 @@ function Footer() {
           marginbottom: " 10px",
         }}
       />
-      <hr
-        style={{
-          border: "1px solid white",
-          width: "200px",
-          alignContent: "center",
-          margin: "auto",
-          marginBottom: "0px",
-          marginTop: "15px",
-        }}
-      ></hr>
+
       <Link to="/contact" style={{ textDecoration: "none" }}>
         <h3
-  style={{
-    height: "50px",
-    margin: "10px auto 30px auto",
-    width: "fit-content",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "0 20px",
-    color: "red",
-    border: "2px solid red",
-    borderRadius: "8px",
-    cursor: "pointer",
-    transition: "all 0.3s ease",
-  }}
-  onMouseOver={(e) => {
-    e.target.style.backgroundColor = "red";
-    e.target.style.color = "white";
-    e.target.style.transform = "scale(1.05)";
-  }}
-  onMouseOut={(e) => {
-    e.target.style.backgroundColor = "transparent";
-    e.target.style.color = "red";
-    e.target.style.transform = "scale(1)";
-  }}
->
-  CONTACT US
-</h3>
+          style={{
+            height: "50px",
+            margin: "10px auto 10px auto",
+            width: "fit-content",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "0 20px",
+            color: "red",
+            border: "2px solid red",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s ease",
+          }}
+          onMouseOver={(e) => {
+            e.target.style.backgroundColor = "red";
+            e.target.style.color = "white";
+            e.target.style.transform = "scale(1.05)";
+          }}
+          onMouseOut={(e) => {
+            e.target.style.backgroundColor = "transparent";
+            e.target.style.color = "red";
+            e.target.style.transform = "scale(1)";
+          }}
+        >
+          CONTACT US
+        </h3>
 
       </Link>
       <div
@@ -75,7 +66,7 @@ function Footer() {
           justifyContent: "center",
           alignItems: "center",
           background: "black",
-          padding: "20px",
+          padding: "10px 20px",
         }}
       >
         <span style={{ fontSize: "28px", marginRight: "20px" }}>
@@ -141,8 +132,8 @@ function Footer() {
           onMouseOut={(e) => (e.currentTarget.style.color = "white")}
         ></a>
       </div>
-      <hr style={{ border: "1px solid white", marginBottom: "10px" }} />
-      <p>© {new Date().getFullYear()} TEDx TIET. All rights reserved.</p>
+      <hr style={{ border: "1px solid white", marginBottom: "5px" }} />
+      <p style={{ margin: 0 }}>© {new Date().getFullYear()} TEDx TIET. All rights reserved.</p>
     </footer>
   );
 }

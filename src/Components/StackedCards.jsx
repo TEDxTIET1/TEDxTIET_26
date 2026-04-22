@@ -6,7 +6,7 @@ const cardData = [
     number: "01",
     title: "TED",
     description: "TED is a nonprofit, nonpartisan organization dedicated to discovering, debating and spreading ideas that spark conversation, deepen understanding and drive meaningful change.",
-    variant: "red"
+    variant: "white"
   },
   {
     number: "02",

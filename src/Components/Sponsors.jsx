@@ -34,6 +34,12 @@ function Sponsors() {
       image: "/Sponsors/TwistedTails.jpg",
       className: "twisted-logo"
     },
+    {
+      link: "https://astoratravels.com/",
+      text: "ASTORA TRAVELS",
+      image: "/Sponsors/Astora.jpg",
+      className: "astora-logo"
+    },
   ];
 
   return (
